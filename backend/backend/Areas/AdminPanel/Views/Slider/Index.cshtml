@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Slider>
+@{
+    ViewData["Title"] = "Index";
+    var count = 1;
+}
+
+<h1>Sliders</h1><br />
+<a class="btn btn-success" asp-action="Create">Create Slider</a>
+<table class="table table-striped table-dark">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Image</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Settings</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var slider in Model)
+        {
+            <tr>
+                <th scope="row">@count</th>
+                <td><img src="~/images/@slider.Url" alt="Alternate Text" /></td>
+                <td>@slider.Title</td>
+                <td>@slider.Description</td>
+                <td>
+                    <a asp-action="Update" class="btn btn-sm btn-warning" asp-route-id="@slider.Id"><i class="mdi mdi-pencil"></i></a>
+                    <a asp-action="Delete" class="btn btn-sm btn-danger" asp-route-id="@slider.Id"><i class="mdi mdi-delete"></i></a>
+                </td>
+            </tr>
+            count++;
+        }
+    </tbody>
+</table>
+

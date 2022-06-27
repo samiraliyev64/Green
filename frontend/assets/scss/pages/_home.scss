@@ -1,0 +1,284 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.myNav {
+    a {
+        color: black;
+    }
+
+    .navbar-brand {
+        color: green;
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    .home {
+        color: green !important;
+    }
+
+    .get-started {
+        border: 2px solid green;
+        border-radius: 10px;
+        color: green;
+        background-color: white;
+        padding: 10px 30px !important;
+        outline: none;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: green;
+            color: white;
+        }
+    }
+
+    .navbar-nav {
+        .nav-item {
+            padding: 0 7px;
+        }
+    }
+}
+
+//Carousel
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-caption {
+    position: relative;
+    top: 20%;
+    font-size: 20px !important;
+}
+
+.read-more {
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 10px 25px;
+    outline: none;
+
+    &:hover {
+        background-color: rgb(3, 189, 3);
+    }
+}
+
+.carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 100% !important;
+}
+
+.carousel-control-prev {
+    position: absolute !important;
+    top: 37% !important;
+    left: 1% !important;
+    border: 1px solid rgb(173, 168, 168) !important;
+    border-radius: 40px !important;
+    height: 60px !important;
+    width: 60px !important;
+    background-color: grey !important;
+    transition: all 0.3s ease !important;
+
+    &:hover {
+        background-color: rgb(95, 91, 91);
+    }
+}
+
+.carousel-control-next {
+    position: absolute !important;
+    top: 37% !important;
+    right: 1% !important;
+    border: 1px solid grey !important;
+    border-radius: 40px !important;
+    height: 60px !important;
+    width: 60px !important;
+    background-color: grey !important;
+    transition: all 0.3s ease !important;
+
+    &:hover {
+        background-color: rgb(95, 91, 91);
+    }
+}
+
+//About Us
+#about-us {
+    padding-top: 30px;
+}
+
+.about-us-summary {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 30px;
+
+    h1 {
+        font-weight: 600;
+    }
+
+    p {
+        padding-top: 5px;
+        color: gray;
+        font-size: 14px;
+    }
+}
+
+.aboutt {
+    height: 450px;
+    width: 550px;
+}
+
+
+.about-us-text {
+    h2 {
+        font-weight: 600;
+    }
+}
+
+//Contact
+#contact {
+    padding-top: 70px;
+}
+
+.contact-summary {
+    text-align: center;
+    padding-bottom: 30px;
+
+    h1 {
+        font-weight: 600;
+    }
+
+    p {
+        padding-top: 5px;
+        color: gray;
+        font-size: 15px;
+    }
+}
+
+.location,
+.email,
+.phone {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.fa-location-dot,
+.fa-envelope,
+.fa-mobile-button {
+    color: green;
+    padding: 20px;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: rgb(68, 223, 68);
+
+    }
+}
+
+.left {
+    hr {
+        background-color: darkgreen;
+        color: darkgreen;
+        height: 5px;
+    }
+}
+
+form {
+    textarea {
+        width: 100%;
+        height: 250px;
+    }
+
+    .message {
+        margin-top: 20px;
+    }
+
+    .btn2 {
+        display: flex;
+        justify-content: center;
+
+        button {
+            justify-content: center;
+            transition: all 0.3 ease;
+
+            &:hover {
+                background-color: rgb(3, 184, 3);
+            }
+        }
+    }
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+//Footer
+footer {
+    margin-top: 40px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-bottom: 1px;
+    width: 100%;
+
+    h1 {
+        padding: 20px;
+    }
+
+    i {
+        margin-top: 15px;
+    }
+
+    ul {
+        li {
+            display: inline;
+            list-style-type: none;
+            padding: 0 3px;
+
+            i {
+                background-color: #5CB874;
+                border-radius: 100%;
+                padding: 10px;
+            }
+        }
+    }
+
+    p {
+        a {
+            text-decoration: none;
+            color: #458757;
+
+            &:hover {
+                color: #5abb74;
+            }
+        }
+    }
+
+    .copyrights {
+        padding-top: 30px;
+
+        p {
+            &:nth-child(2) {
+                font-size: 15px;
+                margin-top: -10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        width: 100% !important;
+    }
+
+    html {
+        width: 100% !important;
+    }
+
+}
